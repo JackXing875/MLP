@@ -85,12 +85,12 @@ if __name__ == "__main__":
 
     nn = MLP(_in,_out1,_out2,outSize)
 
-    epochs = 500
+    epochs = 1000
     learning_rate = 0.0001
 
     loss_history = []
 
-    for epoch in range(epochs):
+    for epoch in range(epochs+1):
         out = nn.forward(X_train)
         loss = np.mean(np.square(Y_train - out))
         loss_history.append(loss)
