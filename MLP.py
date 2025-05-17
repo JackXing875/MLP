@@ -10,7 +10,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 import seaborn as sns
-import os
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
